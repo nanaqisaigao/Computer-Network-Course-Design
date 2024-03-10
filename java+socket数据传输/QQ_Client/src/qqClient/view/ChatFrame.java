@@ -42,7 +42,7 @@ public class ChatFrame extends JFrame {
     private MessageClientService messageClientService = null;   // 聊天类
     private FileClinetService fileClinetService = null;         // 文件传输类
 
-    public ChatFrame(String userId, String getterId) {
+    public ChatFrame(final String userId, final String getterId) {
         System.out.println(Thread.currentThread().getName());
         
         // 初始化文件传输类
@@ -51,7 +51,7 @@ public class ChatFrame extends JFrame {
         this.messageClientService = new MessageClientService(ChatFrame.this);
        
         // 初始化 启动线程
-		UserClientService userClientService = new UserClientService();	
+		final UserClientService userClientService = new UserClientService();	
 		userClientService.startThreadChat(userId, getterId, ChatFrame.this);
 		
 		

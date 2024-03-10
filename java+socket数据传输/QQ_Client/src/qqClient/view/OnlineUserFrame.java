@@ -39,7 +39,7 @@ public class OnlineUserFrame extends JFrame{
 	
 	private UserClientService userClientService;
 	
-	public OnlineUserFrame(String userId, UserClientService userClientServices) {
+	public OnlineUserFrame(final String userId, UserClientService userClientServices) {
 		
 		this.userClientService = userClientServices;
 		
