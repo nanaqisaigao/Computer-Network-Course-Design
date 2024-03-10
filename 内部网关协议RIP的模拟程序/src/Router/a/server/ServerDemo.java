@@ -18,10 +18,10 @@ public class ServerDemo {
 		RouterBTable.add(new RouterInfoItem("N6", 6, "F"));
 		RouterBTable.add(new RouterInfoItem("N8", 4, "E"));
 		routerB.Accept(RouterBTable, "");
-		System.out.println("Â·ÓÉ" + routerB.Name + "³õÊ¼Â·ÓÉ±í");
+		System.out.println("è·¯ç”±" + routerB.Name + "åˆå§‹è·¯ç”±è¡¨");
 		routerB.ShowTable();
 		routerB.startAccept();
-		System.out.println("Â·ÓÉ" + routerB.Name + "½ÓÊÕºóµÄÂ·ÓÉ±í");
+		System.out.println("è·¯ç”±" + routerB.Name + "åˆå§‹è·¯ç”±è¡¨");
 		routerB.ShowTable();
 	}
 }

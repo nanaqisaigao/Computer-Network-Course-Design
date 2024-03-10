@@ -81,7 +81,7 @@ public class ShowWindow extends JFrame{
 		simScreen.setBounds(0, 0, 1000, 600);
 		contentPane.add(simScreen);
 		
-		Next3Min = new JButton("ÏÂÒ»ÖÜÆÚ");
+		Next3Min = new JButton("ä¸‹ä¸€å‘¨æœŸ");
 		Next3Min.setBounds(20, 620, 100, 50);
 		contentPane.add(Next3Min);
 		Next3Min.addActionListener(new ActionListener(){
@@ -105,7 +105,7 @@ public class ShowWindow extends JFrame{
 			
 		});
 		
-		DivideNet = new JButton("ÇÐ¶ÏÂ·ÓÉFºÍÍøÂç6");
+		DivideNet = new JButton("åˆ‡æ–­è·¯ç”±Få’Œç½‘ç»œ6");
 		DivideNet.setBounds(140, 620, 200, 50);
 		contentPane.add(DivideNet);
 		DivideNet.addActionListener(new ActionListener(){

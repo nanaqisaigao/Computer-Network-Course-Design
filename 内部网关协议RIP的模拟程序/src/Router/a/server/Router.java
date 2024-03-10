@@ -18,13 +18,13 @@ public class Router extends MainRouter{
 	public boolean startAccept(){
 		try {
 			ServerSocket serverSocket = new ServerSocket(this.RouterAcceptPort);
-			System.out.println(this.Name + "Â·ÓÉÆ÷Æô¶¯,¿ªÊ¼¼àÌıÆäËûÂ·ÓÉÆ÷·¢À´µÄÂ·ÓÉ±í...");
+			System.out.println(this.Name + "è·¯ç”±å™¨å¯åŠ¨,å¼€å§‹ç›‘å¬å…¶ä»–è·¯ç”±å™¨å‘æ¥çš„è·¯ç”±è¡¨...");
 			Socket client = serverSocket.accept();
 			System.out.println("");
 			ObjectInputStream objectInputStream = new ObjectInputStream(client.getInputStream());
 			NetInfomation TempObj = (NetInfomation)objectInputStream.readObject();
 			ArrayList<RouterInfoItem> TempTables = TempObj.getRouterTables();
-			//´¦ÀíÂ·ÓÉ±í
+			//å¤„ç†è·¯ç”±è¡¨
 			for (int i = 0;i < TempTables.size();i ++){
 				TempTables.get(i).setNextRouterAddr(TempObj.getFromRouterNameString());
 				TempTables.get(i).DistanceAdd();
@@ -32,7 +32,7 @@ public class Router extends MainRouter{
 			objectInputStream.close();
 			client.close();
 			serverSocket.close();
-			System.out.println("À´×ÔÂ·ÓÉ" + TempObj.getFromRouterNameString() + "µÄÂ·ÓÉ±í");
+			System.out.println("æ¥è‡ªè·¯ç”±" + TempObj.getFromRouterNameString() + "æ¥è‡ªè·¯ç”±");
 			ShowTable(TempTables);
 			this.Accept(TempTables, "");
 			return true;

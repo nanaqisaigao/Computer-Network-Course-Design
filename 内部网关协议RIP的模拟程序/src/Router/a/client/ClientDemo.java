@@ -23,7 +23,7 @@ public class ClientDemo {
 		RouterCTable.add(new RouterInfoItem("N8", 3));
 		routerC.Accept(RouterCTable, "");
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("ÇëÊäÈë·şÎñÆ÷IP£º");
+		System.out.println("è¯·è¾“å…¥æœåŠ¡å™¨IPï¼š");
 		String iPAddrString;
 		while (true){
 			String line = scanner.nextLine();
@@ -32,7 +32,7 @@ public class ClientDemo {
 				break;
 			}
 			else{
-				System.out.println("ÇëÊäÈëÕıÈ·µÄIPV4µØÖ·¸ñÊ½");
+				System.out.println("è¯·è¾“å…¥æ­£ç¡®çš„IPV4åœ°å€æ ¼å¼");
 			}
 		}
 		routerC.Send(iPAddrString);
