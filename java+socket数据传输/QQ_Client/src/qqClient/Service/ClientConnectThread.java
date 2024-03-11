@@ -158,7 +158,7 @@ public class ClientConnectThread extends Thread{
 	}
 	
 	
-	
+	//把内容显示到前端
     public void println(String s) {
         if (s != null) {
             chatFrame.getTxt_Chat().setText(chatFrame.getTxt_Chat().getText() + s + "\n");

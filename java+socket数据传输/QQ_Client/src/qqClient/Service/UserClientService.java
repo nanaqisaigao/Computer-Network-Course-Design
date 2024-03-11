@@ -130,7 +130,7 @@ public class UserClientService {
 				loop = true;   // 函数返回值
 			} 
 			// 无论成功与否, 关闭socket
-			// 关闭 以启动的socket
+			// 关闭已启动的socket
 			socket.close();
 			
 		} catch (IOException e) {
