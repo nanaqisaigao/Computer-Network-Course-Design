@@ -138,11 +138,11 @@ public class ChatFrame extends JFrame {
 	                 * 		的sendMessageToAll()群聊方法  向服务端发送请求 
 	                 */
 	                messageClientService.sendMessageToAll(userId, txt_Send.getText());
-	                txt_Send.setText("");   // 换行
+	                txt_Send.setText(txt_Send.getText());   // 换行
 	                
                 } else {
 					messageClientService.sendMessageToOne(userId, getterId, txt_Send.getText());
-					txt_Send.setText("");
+					txt_Send.setText(txt_Send.getText());
 				}
 			
             }

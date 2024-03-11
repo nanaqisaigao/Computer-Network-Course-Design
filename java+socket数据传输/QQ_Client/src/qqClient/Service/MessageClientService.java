@@ -30,7 +30,7 @@ public class MessageClientService {
 
 	/** 私聊方法
 	 * 
-	 *  该方法向服务端发送message对象, 有服务端发送给指定用户
+	 *  该方法向服务端发送message对象,由服务端发送给指定用户
 	 * 
 	 * @param sendId   发送者Id
 	 * @param getterId 接收者Id
